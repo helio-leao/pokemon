@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="./assetts/images/pokemon-logo.png">
+    <title>Pokemon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assetts/styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="#">
+                <img src="./assetts/images/pokemon-logo.png" alt="Pokemon Logo">
+            </a>
+        </div>
+
+        <div class="search-bar">
+            <img class="search-bar-icon" src="./assetts/images/search-icon.png" alt="Search Icon">
+            <input class="search-bar-input" type="search" placeholder="Buscar seu pokemon">
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <h1 class="filter-section-title">Pokemons</h1>
+
+        <ul class="filter-section-list">
+            <li class="filter-section-list-item">
+                <button class="filter-button active">all</button>
+            </li>
+            <li class="filter-section-list-item">
+                <button class="filter-button">fire</button>
+            </li class="filter-section-list-item">
+            <li class="filter-section-list-item">
+                <button class="filter-button">water</button>
+            </li>
+            <li class="filter-section-list-item">
+                <button class="filter-button">electric</button>
+            </li>
+            <li class="filter-section-list-item">
+                <button class="filter-button">poison</button>
+            </li>
+        </ul>
+    </section>
+
+    <main class="pokemons">
+        <ul class="pokemons-list"></ul>
+    </main>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

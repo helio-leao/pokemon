@@ -1,0 +1,166 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1B1A1D;
+    max-width: 1440px;
+    padding: 20px 52px;
+    margin: 0 auto;
+}
+
+/* Search Bar */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.search-bar {
+    width: 370px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-bar-icon {
+    position: absolute;
+    left: 24px
+}
+
+.search-bar-input {
+    width: 100%;
+    height: 60px;
+    padding: 16px 0px 16px 70px;
+    border-radius: 50px;
+    background: transparent;
+    border-color: white;
+    border-style: solid;
+}
+
+.search-bar-input::placeholder {
+    color: white;
+}
+
+/* Filter section */
+
+.filter-section {   
+    margin-bottom: 46px;
+}
+
+.filter-section-title {
+    line-height: 150%;
+    margin-bottom: 36px;
+}
+
+.filter-section-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+}
+
+.filter-button {
+    color: rgb(118, 118, 118);
+    background-color: transparent;
+    border-radius: 50px;
+    border-style: solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.filter-button.active,
+    .filter-button:hover {
+    border-color: white;
+    color: white;
+}
+
+/* Pokemon Section */
+
+.pokemons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 30px;
+}
+
+.pokemons-list-item {
+    min-width: 311px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.pokemon-icon {
+    height: 264px;
+    background: #56CCF2;;
+    display: flex;
+    justify-content: center;
+}
+
+/* Pokemon Section - description */
+
+.pokemon-description {
+    background: #28272B;
+    padding: 16px 22px;
+    padding-bottom: 44px;
+}
+
+.pokemon-description-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.pokemon-description-info-category {
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 2px;
+    padding: 4px 12px;
+}
+
+/* Pokemon Section - stats */
+
+.pokemon-stats-list {
+    list-style: none;
+}
+
+.pokemon-stats-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.pokemons-list-item-stats-bar {
+    background: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pokemons-list-item-stats-bar-inside {
+    background: #FFCC00;
+    width: 50%;
+    height: 10px;
+    border-radius: 10px;
+}
+
+/* screen size adjustment */
+
+@media only screen and (max-width: 1437px) {
+    .pokemons-list {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 673px) {
+    .header {
+        justify-content: center;
+    }
+}
